@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request an appointment at Rathburn Animal Clinic in Etobicoke. Book your pet's wellness exam, vaccination, or other veterinary services.">
+    <title>Request an Appointment | Rathburn Animal Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span class="phone">(416) 622-8818</span>
+                <span class="hours">Mon/Tue/Thu/Fri 8am-6pm, Wed 8am-4pm, Sat 9am-3pm, Sun Closed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Rathburn Animal Clinic</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html" class="active">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="emergency.html">Emergency</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Request an Appointment</h2>
+            <p class="hero-subtext">Fill out the form below and we'll get back to you to confirm your appointment. For urgent matters, please call (416) 622-8818 directly.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <div class="appointment-layout">
+                <!-- Form Section -->
+                <div class="appointment-form-section">
+                    <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pet-name">Pet's Name <span class="required">*</span></label>
+                            <input type="text" id="pet-name" name="pet_name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="species">Species <span class="required">*</span></label>
+                                <select id="species" name="species" required>
+                                    <option value="">Select species</option>
+                                    <option value="dog">Dog</option>
+                                    <option value="cat">Cat</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reason">Reason for Visit <span class="required">*</span></label>
+                                <select id="reason" name="reason" required>
+                                    <option value="">Select reason</option>
+                                    <option value="wellness-exam">Wellness Exam</option>
+                                    <option value="vaccination">Vaccination</option>
+                                    <option value="dental-care">Dental Care</option>
+                                    <option value="spay-neuter">Spay/Neuter</option>
+                                    <option value="surgery-consultation">Surgery Consultation</option>
+                                    <option value="sick-pet">Sick Pet</option>
+                                    <option value="emergency">Emergency</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="preferred-date">Preferred Date</label>
+                                <input type="date" id="preferred-date" name="preferred_date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-time">Preferred Time</label>
+                                <select id="preferred-time" name="preferred_time">
+                                    <option value="">Select time</option>
+                                    <option value="morning">Morning 8am-10am</option>
+                                    <option value="mid-morning">Mid-Morning 10am-12pm</option>
+                                    <option value="afternoon">Afternoon 12pm-3pm</option>
+                                    <option value="late-afternoon">Late Afternoon 3pm-6pm</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Patient Status <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="patient_status" value="new" required>
+                                    New Patient
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="patient_status" value="returning" required>
+                                    Returning Patient
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Let us know if there's anything specific you'd like us to know about your pet or your visit."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Request Appointment</button>
+                    </form>
+
+                    <div class="form-notice">
+                        <p>This is a request, not a confirmed booking. We'll contact you to confirm.</p>
+                    </div>
+                </div>
+
+                <!-- Side Panel -->
+                <aside class="appointment-sidebar">
+                    <div class="quick-contact">
+                        <h3>Need to Reach Us?</h3>
+                        <div class="contact-info">
+                            <p class="contact-phone">
+                                <strong>Phone:</strong><br>
+                                (416) 622-8818
+                            </p>
+                            <p class="contact-hours">
+                                <strong>Clinic Hours:</strong><br>
+                                Monday - Tuesday - Thursday - Friday: 8am-6pm<br>
+                                Wednesday: 8am-4pm<br>
+                                Saturday: 9am-3pm<br>
+                                Sunday: Closed
+                            </p>
+                            <p class="emergency-note">
+                                For emergency situations, call us directly at (416) 622-8818.
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Rathburn Animal Clinic</h4>
+                    <p>460 Renforth Dr<br>Etobicoke, ON M9C 2N2</p>
+                    <p>(416) 622-8818<br>Fax: 416-620-1823</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Mon, Tue, Thu, Fri: 8am-6pm<br>
+                    Wed: 8am-4pm<br>
+                    Sat: 9am-3pm<br>
+                    Sun: Closed</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/RathburnAnimalClinic/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/rathburnanimalclinic" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rathburn Animal Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
