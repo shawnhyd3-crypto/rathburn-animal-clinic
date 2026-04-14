@@ -1,165 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Emergency care for pets in Etobicoke. Rathburn Animal Clinic handles urgent veterinary situations. Call (416) 622-8818 immediately for emergency care.">
-    <title>Emergency Care | Rathburn Animal Clinic</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Emergency Care | Rathburn Animal Clinic</title>
+<meta name="description" content="When your pet needs urgent care in Etobicoke. Same-day appointments during clinic hours." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <a href="#main-content" class="skip-nav">Skip to main content</a>
+<div class="topbar">
+  <div class="container">
+    <span><a href="tel:+14166228818">☎ (416) 622-8818</a> <span class="dot">•</span> 460 Renforth Dr, Etobicoke</span>
+    <span>Mon–Fri 8–6 <span class="dot">•</span> Sat 9–3</span>
+  </div>
+</div>
+<header class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">Rathburn <span>Animal Clinic</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menu">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="emergency.html" class="active">Emergency</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="appointment.html" class="btn btn-accent" style="padding:0.5rem 1.1rem;font-size:0.9rem;">Book Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <span>(416) 622-8818</span>
-            <span>Mon, Tue, Thu, Fri: 8am-6pm | Wed: 8am-4pm | Sat: 9am-3pm</span>
-        </div>
-    </div>
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Emergency</span>
+    <h1>When your pet needs help now.</h1>
+    <p>During clinic hours we accept same-day urgent appointments. Outside our hours, please head to an emergency hospital.</p>
+  </div>
+</section>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container header-content">
-            <div class="logo">
-                <h1>Rathburn Animal Clinic</h1>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="appointment.html">Appointment</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="emergency.html" class="active">Emergency</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Emergency Banner -->
+<section>
+  <div class="container">
     <div class="emergency-banner">
-        <div class="container">
-            <h2>Medical Emergency</h2>
-            <p><strong>Call us immediately: (416) 622-8818</strong></p>
-        </div>
+      <strong>During clinic hours:</strong> Call us first at <a href="tel:+14166228818">(416) 622-8818</a>.
     </div>
 
-    <!-- Main Content -->
-    <main id="main-content" class="emergency-main">
-        <div class="container">
-            <!-- Immediate Action Section -->
-            <section class="emergency-intro">
-                <h3>If your pet is experiencing a medical emergency</h3>
-                <p class="emergency-highlight">Call us immediately at (416) 622-8818</p>
-                <p>Time matters when your pet is in distress. Our team can advise you on next steps and prepare to see your pet right away if we're open.</p>
-            </section>
+    <div class="two-col">
+      <div>
+        <h2>Signs your pet needs urgent care</h2>
+        <ul class="checklist">
+          <li>Difficulty breathing or choking</li>
+          <li>Collapse, sudden weakness, or seizures</li>
+          <li>Severe bleeding that won't stop</li>
+          <li>Suspected poisoning (chocolate, xylitol, medications, rodenticide, antifreeze)</li>
+          <li>Trauma: hit by car, fall, bite wound</li>
+          <li>Repeated vomiting or diarrhea (especially with blood)</li>
+          <li>Unable to urinate, especially male cats</li>
+          <li>Bloated or distended abdomen</li>
+          <li>Eye injuries or sudden blindness</li>
+          <li>Heatstroke (panting, collapse, high body temp)</li>
+        </ul>
+        <p style="margin-top:1.5rem;color:var(--text-soft);">If you're unsure, call us. We'd rather hear from you than have you wait.</p>
+      </div>
 
-            <!-- When to Seek Emergency Care -->
-            <section class="emergency-section">
-                <h3>Signs Your Pet Needs Emergency Care</h3>
-                <p>If your pet shows any of these signs, seek veterinary care immediately:</p>
-                <ul class="emergency-list">
-                    <li>Severe bleeding or uncontrolled bleeding that won't stop</li>
-                    <li>Difficulty breathing, gasping, or choking</li>
-                    <li>Seizures or loss of consciousness</li>
-                    <li>Suspected poisoning or ingestion of a toxic substance</li>
-                    <li>Severe trauma such as hit by a car, serious fall, or attack</li>
-                    <li>Inability to walk or complete paralysis</li>
-                    <li>Uncontrollable vomiting or diarrhea</li>
-                    <li>Inability to urinate or defecate</li>
-                    <li>Severe abdominal pain or bloating</li>
-                    <li>Difficulty giving birth or suspected pregnancy complications</li>
-                    <li>Eye trauma or sudden vision loss</li>
-                    <li>Signs of extreme pain or distress</li>
-                </ul>
-            </section>
-
-            <!-- What to Do While Getting to the Clinic -->
-            <section class="emergency-section">
-                <h3>What to Do While Getting to the Clinic</h3>
-                <div class="emergency-steps">
-                    <div class="step">
-                        <h4>Call Ahead</h4>
-                        <p>Contact us immediately at (416) 622-8818 so we can prepare for your arrival and get you the fastest treatment possible.</p>
-                    </div>
-                    <div class="step">
-                        <h4>Keep Your Pet Calm</h4>
-                        <p>Speak in a soothing voice. Keep your pet warm with a blanket and minimize movement to prevent further injury.</p>
-                    </div>
-                    <div class="step">
-                        <h4>Manage Bleeding</h4>
-                        <p>If there's visible bleeding, apply gentle pressure with a clean cloth or gauze. Do not remove any embedded objects.</p>
-                    </div>
-                    <div class="step">
-                        <h4>Transport Safely</h4>
-                        <p>Use a carrier or crate if possible to prevent movement during transport. If your pet can't move, use a board or blanket to support them.</p>
-                    </div>
-                    <div class="step">
-                        <h4>Bring Documents</h4>
-                        <p>If available, bring your pet's medical records, vaccination history, and any information about what caused the emergency.</p>
-                    </div>
-                    <div class="step">
-                        <h4>Have Your Information Ready</h4>
-                        <p>Know your contact information and pet's age, medical history, and any medications they take so you can provide details quickly.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Clinic Hours -->
-            <section class="emergency-section">
-                <h3>Our Hours</h3>
-                <div class="hours-display">
-                    <p><strong>Monday, Tuesday, Thursday, Friday:</strong> 8am - 6pm</p>
-                    <p><strong>Wednesday:</strong> 8am - 4pm</p>
-                    <p><strong>Saturday:</strong> 9am - 3pm</p>
-                    <p><strong>Sunday:</strong> Closed</p>
-                </div>
-                <p class="hours-notice"><strong>Note:</strong> We do not currently have after-hours emergency services. If your pet has an emergency outside our business hours, please contact an emergency veterinary clinic in your area. Call (416) 622-8818 during business hours for referral information.</p>
-            </section>
-
-            <!-- CTA Section -->
-            <section class="emergency-cta">
-                <h3>Is your pet having an emergency right now?</h3>
-                <a href="tel:4166228818" class="btn-emergency">Call (416) 622-8818 Now</a>
-            </section>
+      <div>
+        <div class="form-card">
+          <h3>After-Hours Emergency</h3>
+          <p>When we're closed, go directly to a 24-hour emergency hospital:</p>
+          <div class="note">
+            <strong>Note for Mila:</strong> Please provide preferred after-hours referral (name, address, phone) so we can list it here. Common options: VEC Toronto, Mississauga-Oakville Veterinary Emergency Hospital, 404 Vet.
+          </div>
+          <p style="margin-top:1.5rem;"><strong>Pet Poison Helpline:</strong><br/><a href="tel:+18552137634">(855) 213-7634</a></p>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h4>Rathburn Animal Clinic</h4>
-                    <p>460 Renforth Dr<br>Etobicoke, ON M9C 2N2</p>
-                    <p><strong>(416) 622-8818</strong></p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Hours</h4>
-                    <p>Mon, Tue, Thu, Fri: 8am-6pm<br>Wed: 8am-4pm<br>Sat: 9am-3pm<br>Sun: Closed</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <ul>
-                        <li><a href="https://facebook.com/RathburnAnimalClinic/" target="_blank">Facebook</a></li>
-                        <li><a href="https://instagram.com/rathburnanimalclinic" target="_blank">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Rathburn Animal Clinic. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Rathburn <span>Animal Clinic</span></a>
+        <p style="margin-top:1rem;">Independent veterinary care in Etobicoke since 2004. Personal attention for every patient.</p>
+      </div>
+      <div>
+        <h4>Clinic</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="appointment.html">Book a visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tel:+14166228818">(416) 622-8818</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon–Tue 8–6</li>
+          <li>Wed 8–4</li>
+          <li>Thu–Fri 8–6</li>
+          <li>Sat 9–3</li>
+          <li>Sun Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Rathburn Animal Clinic. 460 Renforth Dr, Etobicoke, ON M9C 2N2.</div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
