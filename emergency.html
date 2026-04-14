@@ -7,7 +7,7 @@
 <meta name="description" content="When your pet needs urgent care in Etobicoke. Same-day appointments during clinic hours." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -38,49 +38,76 @@
 <section class="page-header">
   <div class="container">
     <span class="eyebrow">Emergency</span>
-    <h1>When your pet needs help now.</h1>
-    <p>During clinic hours we accept same-day urgent appointments. Outside our hours, please head to an emergency hospital.</p>
+    <h1>When your pet needs help <em>now</em>.</h1>
+    <p>During clinic hours we accept same-day urgent appointments. Outside our hours, head to a 24-hour emergency hospital.</p>
   </div>
 </section>
 
 <section>
   <div class="container">
     <div class="emergency-banner">
-      <strong>During clinic hours:</strong> Call us first at <a href="tel:+14166228818">(416) 622-8818</a>.
+      <strong>During clinic hours:</strong> Call us first at <a href="tel:+14166228818">(416) 622-8818</a>. We'll advise whether to come in or go directly to emergency.
     </div>
 
-    <div class="two-col">
+    <div class="triage-panel">
+      <h2>Is this an emergency?</h2>
+      <p class="triage-lede">If your pet shows any of these signs, don't wait. Head to the nearest 24-hour emergency hospital or call us during open hours.</p>
+      <div class="triage-grid">
+        <div class="triage-col urgent">
+          <h3>Go now</h3>
+          <ul class="checklist">
+            <li>Difficulty breathing or choking</li>
+            <li>Collapse, seizures, unresponsiveness</li>
+            <li>Severe bleeding that won't stop</li>
+            <li>Suspected poisoning (chocolate, xylitol, rodenticide, antifreeze, human medications)</li>
+            <li>Trauma: hit by car, fall, major wound</li>
+            <li>Unable to urinate (especially male cats)</li>
+            <li>Bloated or distended abdomen</li>
+            <li>Heatstroke (collapse, panting, hot to touch)</li>
+          </ul>
+        </div>
+        <div class="triage-col watch">
+          <h3>Call us soon</h3>
+          <ul class="checklist">
+            <li>Vomiting or diarrhea lasting more than 24 hours</li>
+            <li>Not eating for more than a day</li>
+            <li>Limping that isn't improving</li>
+            <li>Unusual lumps or swelling</li>
+            <li>Eye discharge or squinting</li>
+            <li>Excessive drinking or urinating</li>
+            <li>Behavior changes (hiding, aggression, confusion)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:3rem;">
       <div>
-        <h2>Signs your pet needs urgent care</h2>
-        <ul class="checklist">
-          <li>Difficulty breathing or choking</li>
-          <li>Collapse, sudden weakness, or seizures</li>
-          <li>Severe bleeding that won't stop</li>
-          <li>Suspected poisoning (chocolate, xylitol, medications, rodenticide, antifreeze)</li>
-          <li>Trauma: hit by car, fall, bite wound</li>
-          <li>Repeated vomiting or diarrhea (especially with blood)</li>
-          <li>Unable to urinate, especially male cats</li>
-          <li>Bloated or distended abdomen</li>
-          <li>Eye injuries or sudden blindness</li>
-          <li>Heatstroke (panting, collapse, high body temp)</li>
-        </ul>
-        <p style="margin-top:1.5rem;color:var(--text-soft);">If you're unsure, call us. We'd rather hear from you than have you wait.</p>
+        <h2>After-hours emergency hospitals</h2>
+        <div class="note">
+          <strong>Note for Mila:</strong> Please provide your preferred after-hours referral partners. Common GTA options:
+          <ul style="margin-top:0.5rem;padding-left:1.25rem;">
+            <li>Veterinary Emergency Clinic (Toronto)</li>
+            <li>Mississauga-Oakville Veterinary Emergency Hospital</li>
+            <li>Toronto Veterinary Emergency Hospital</li>
+          </ul>
+        </div>
       </div>
 
       <div>
-        <div class="form-card">
-          <h3>After-Hours Emergency</h3>
-          <p>When we're closed, go directly to a 24-hour emergency hospital:</p>
-          <div class="note">
-            <strong>Note for Mila:</strong> Please provide preferred after-hours referral (name, address, phone) so we can list it here. Common options: VEC Toronto, Mississauga-Oakville Veterinary Emergency Hospital, 404 Vet.
-          </div>
-          <p style="margin-top:1.5rem;"><strong>Pet Poison Helpline:</strong><br/><a href="tel:+18552137634">(855) 213-7634</a></p>
-        </div>
+        <h3>Poison Control</h3>
+        <p style="font-size:1.1rem;"><strong>Pet Poison Helpline</strong><br/><a href="tel:+18552137634" style="font-size:1.25rem;font-weight:600;">(855) 213-7634</a></p>
+        <p style="color:var(--text-soft);font-size:0.95rem;">24/7 poison advice for animals. Consultation fee applies.</p>
+        <p style="margin-top:1.5rem;"><strong>ASPCA Poison Control</strong><br/><a href="tel:+18884264435">(888) 426-4435</a></p>
       </div>
     </div>
   </div>
 </section>
 </main>
+<a href="tel:+14166228818" class="mobile-call-fab" aria-label="Call Rathburn Animal Clinic">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+  <span>Call</span>
+</a>
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">

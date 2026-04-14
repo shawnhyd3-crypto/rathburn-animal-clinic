@@ -7,7 +7,7 @@
 <meta name="description" content="Rathburn Animal Clinic is located at 460 Renforth Dr, Etobicoke. Call (416) 622-8818." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -38,8 +38,8 @@
 <section class="page-header">
   <div class="container">
     <span class="eyebrow">Contact</span>
-    <h1>Visit us, call us, or send a note.</h1>
-    <p>460 Renforth Dr in Etobicoke, just off the 427. Parking on-site.</p>
+    <h1>Visit us, call us, or <em>send a note</em>.</h1>
+    <p>460 Renforth Dr in Etobicoke, just off the 427. Free parking on-site.</p>
   </div>
 </section>
 
@@ -47,18 +47,38 @@
   <div class="container">
     <div class="two-col">
       <div>
-        <h2>Find Us</h2>
-        <p>Rathburn Animal Clinic<br/>460 Renforth Dr<br/>Etobicoke, ON M9C 2N2</p>
-        <p><strong>Phone:</strong> <a href="tel:+14166228818">(416) 622-8818</a></p>
-        <p><strong>Email:</strong> <a href="mailto:info@rathburnanimalclinic.ca">info@rathburnanimalclinic.ca</a> <em style="color:var(--text-soft);">(placeholder)</em></p>
-
-        <div class="map-embed" style="margin-top:2rem;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.85!2d-79.5698!3d43.6443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDMuNjQ0M8KwTiA3OcKwMzQnMTEuMyJX!5e0!3m2!1sen!2sca!4v1600000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Rathburn Animal Clinic location"></iframe>
-        </div>
+        <h2>Send us a message</h2>
+        <p style="color:var(--text-soft);">Have a question that doesn't need an appointment? Send a quick note and we'll get back to you.</p>
+        <form class="form-card" style="margin-top:1.5rem;" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Your Name</label>
+              <input type="text" id="c-name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email</label>
+              <input type="email" id="c-email" name="email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-phone">Phone (optional)</label>
+            <input type="tel" id="c-phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Send <span class="arrow">→</span></button>
+        </form>
       </div>
 
       <div>
-        <h2 style="font-size:1.5rem;">Hours</h2>
+        <h2 style="font-size:1.5rem;">Find Us</h2>
+        <p>Rathburn Animal Clinic<br/>460 Renforth Dr<br/>Etobicoke, ON M9C 2N2</p>
+        <p><strong>Phone:</strong> <a href="tel:+14166228818">(416) 622-8818</a></p>
+        <p><strong>Email:</strong> <em style="color:var(--text-soft);">placeholder</em></p>
+
+        <h3 style="margin-top:1.75rem;font-size:1.2rem;">Hours</h3>
         <table class="hours-table">
           <tr><td>Monday</td><td>8:00 AM – 6:00 PM</td></tr>
           <tr><td>Tuesday</td><td>8:00 AM – 6:00 PM</td></tr>
@@ -69,7 +89,7 @@
           <tr><td>Sunday</td><td>Closed</td></tr>
         </table>
 
-        <h3 style="margin-top:2.5rem;font-size:1.25rem;">Social</h3>
+        <h3 style="margin-top:1.75rem;font-size:1.2rem;">Social</h3>
         <ul style="list-style:none;padding:0;">
           <li style="margin-bottom:0.5rem;"><a href="https://facebook.com/RathburnAnimalClinic/">Facebook</a></li>
           <li style="margin-bottom:0.5rem;"><a href="https://instagram.com/rathburnanimalclinic">Instagram</a></li>
@@ -81,9 +101,17 @@
         </div>
       </div>
     </div>
+
+    <div class="map-embed" style="margin-top:3rem;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.85!2d-79.5698!3d43.6443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDMuNjQ0M8KwTiA3OcKwMzQnMTEuMyJX!5e0!3m2!1sen!2sca!4v1600000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Rathburn Animal Clinic location"></iframe>
+    </div>
   </div>
 </section>
 </main>
+<a href="tel:+14166228818" class="mobile-call-fab" aria-label="Call Rathburn Animal Clinic">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+  <span>Call</span>
+</a>
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">

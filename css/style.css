@@ -17,7 +17,7 @@
     --text-soft: #5C6B6A;
     --border:    #E2DDD6;
 
-    --font-serif: "Crimson Text", Georgia, "Times New Roman", serif;
+    --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
     --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 
     --radius-sm: 6px;
@@ -629,4 +629,62 @@ section { padding: 5rem 0; }
     .form-row { grid-template-columns: 1fr; }
     section { padding: 3rem 0; }
     .hero { padding: 3rem 0 4rem; }
+}
+
+/* ---------- v5 additions ---------- */
+
+/* New Patient / FAQ section */
+.new-patient { padding: 5rem 0; background: var(--bg-white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.faq-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2.5rem; }
+.faq-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.75rem 1.5rem; position: relative; transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.faq-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--teal-600); }
+.faq-num { font-family: var(--font-serif); font-size: 2.25rem; font-weight: 600; font-style: italic; color: var(--orange-500); line-height: 1; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+.faq-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; font-family: var(--font-sans); font-weight: 600; letter-spacing: 0; }
+.faq-card p { font-size: 0.95rem; color: var(--text-soft); margin-bottom: 0; line-height: 1.55; }
+
+/* Services section wrapper */
+.services-section { padding: 5rem 0; }
+
+/* Price tag on service cards */
+.service-card .price { margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border); font-family: var(--font-serif); font-style: italic; font-size: 1.05rem; color: var(--teal-700); margin-bottom: 0; font-weight: 500; }
+.service-card.featured .price { color: var(--orange-100); border-top-color: rgba(255,255,255,0.15); }
+
+/* Emergency triage panel */
+.triage-lede { font-size: 1.1rem; color: var(--text-soft); max-width: 700px; margin-bottom: 2rem; }
+.triage-panel { background: var(--bg-white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2.5rem; margin-top: 1.5rem; box-shadow: var(--shadow); }
+.triage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+.triage-col { border-radius: var(--radius); padding: 1.75rem; border: 2px solid transparent; }
+.triage-col h3 { font-family: var(--font-sans); font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; }
+.triage-col ul { list-style: none; padding: 0; margin: 0; }
+.triage-col li { padding: 0.5rem 0 0.5rem 1.5rem; position: relative; font-size: 0.98rem; border-bottom: 1px solid rgba(0,0,0,0.05); }
+.triage-col li:last-child { border-bottom: none; }
+.triage-col li::before { position: absolute; left: 0; top: 0.5rem; font-weight: 700; }
+.triage-col.urgent { background: #FDF0EC; border-color: var(--orange-500); }
+.triage-col.urgent h3 { color: var(--orange-600); }
+.triage-col.urgent li::before { content: "→"; color: var(--orange-600); }
+.triage-col.watch { background: var(--teal-50); border-color: var(--teal-600); }
+.triage-col.watch h3 { color: var(--teal-700); }
+.triage-col.watch li::before { content: "•"; color: var(--teal-700); }
+
+/* Mobile call FAB */
+.mobile-call-fab { display: none; position: fixed; bottom: 1.25rem; right: 1.25rem; z-index: 100; background: var(--orange-500); color: #fff; padding: 0.9rem 1.25rem; border-radius: 999px; font-weight: 600; font-size: 0.95rem; box-shadow: 0 8px 24px rgba(217, 120, 84, 0.45); align-items: center; gap: 0.5rem; text-decoration: none; transition: transform 0.2s ease, background 0.2s ease; }
+.mobile-call-fab:hover { background: var(--orange-600); color: #fff; transform: translateY(-2px); }
+.mobile-call-fab svg { stroke: #fff; }
+
+/* Page header (about/services/contact pages) */
+.page-header { padding: 5rem 0 3rem; background: var(--bg-white); border-bottom: 1px solid var(--border); }
+.page-header h1 { margin-bottom: 1rem; }
+.page-header p { font-size: 1.15rem; color: var(--text-soft); max-width: 700px; }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .faq-grid { grid-template-columns: repeat(2, 1fr); }
+    .triage-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .triage-panel { padding: 1.75rem; }
+}
+
+@media (max-width: 640px) {
+    .faq-grid { grid-template-columns: 1fr; }
+    .mobile-call-fab { display: inline-flex; }
+    body { padding-bottom: 4.5rem; }
 }
