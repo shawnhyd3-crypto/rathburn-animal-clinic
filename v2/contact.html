@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit — Rathburn v2 preview</title>
+<meta name="description" content="v2 design preview. Not for indexing.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..900,0..100,0..1;1,9..144,200..900,0..100,0..1&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap-wide">
+    <a href="index.html" class="wordmark">Rathburn<em>.</em></a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="index.html">Practice</a>
+      <a href="about.html">People</a>
+      <a href="services.html">Services</a>
+      <a href="emergency.html">Urgent</a>
+      <a href="contact.html" aria-current="page">Visit</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+14166228818" class="phone">(416) 622-8818</a>
+      <a href="#book" class="btn btn--primary">Book <span class="arrow">→</span></a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.primary-nav').classList.toggle('open')">≡</button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="wrap-wide">
+    <span class="eyebrow">Visit</span>
+    <h1 style="margin-top:var(--s-m);">460 Renforth.<br><em>Free parking</em>.</h1>
+    <p class="lede">You'll find us in the low-rise strip at the corner of Rathburn and Renforth, just off the 427. New patients are always welcome — call during clinic hours or use the form below.</p>
+  </div>
+</section>
+
+<!-- ===== ADDRESS + HOURS + BOOK ===== -->
+<section class="narrative">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr;gap:var(--s-2xl);">
+      <!-- Two-column: form | meta -->
+      <div class="split" style="gap:var(--s-2xl);align-items:start;">
+        <!-- LEFT: form -->
+        <div id="book">
+          <div class="section-marker reveal" style="margin-bottom:var(--s-l);">
+            <span class="num">01</span>
+            <div>
+              <span class="label">Request a visit</span>
+              <p class="narrative-lede" style="margin-top:var(--s-m);font-size:var(--step-2);">We'll call or email <em>within one business day</em>.</p>
+            </div>
+          </div>
+
+          <form class="form reveal" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-KEY-HERE">
+            <input type="hidden" name="subject" value="New appointment request — Rathburn Animal Clinic">
+            <input type="hidden" name="from_name" value="Rathburn Website">
+            <input type="hidden" name="redirect" value="https://www.rathburnanimalclinic.com/contact.html?sent=1">
+            <!-- honeypot -->
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"></div>
+              <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+            </div>
+            <div class="form-row">
+              <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+              <div>
+                <label for="status">Patient status</label>
+                <select id="status" name="patient_status" required>
+                  <option value="">Select…</option>
+                  <option>New patient</option>
+                  <option>Existing patient</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div><label for="pet">Pet name</label><input id="pet" name="pet_name" required></div>
+              <div>
+                <label for="species">Species</label>
+                <select id="species" name="species" required>
+                  <option value="">Select…</option>
+                  <option>Dog</option>
+                  <option>Cat</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="reason">What brings you in?</label>
+              <textarea id="reason" name="reason" placeholder="Annual wellness, concerning symptom, second opinion, etc."></textarea>
+            </div>
+            <div>
+              <label for="window">Preferred time window</label>
+              <input id="window" name="preferred_time" placeholder="e.g., weekday mornings, any Saturday">
+            </div>
+
+            <!-- Cloudflare Turnstile placeholder -->
+            <div class="cf-turnstile" data-sitekey="YOUR-TURNSTILE-SITEKEY"></div>
+
+            <button type="submit" class="btn btn--primary" style="margin-top:var(--s-s);justify-self:start;">
+              Send request <span class="arrow">→</span>
+            </button>
+
+            <p style="font-size:var(--step--2);color:var(--ink-ghost);max-width:42rem;margin-top:var(--s-s);">By sending this form you agree to be contacted by Rathburn Animal Clinic about your request. We don't share your information and don't add you to any marketing list.</p>
+          </form>
+        </div>
+
+        <!-- RIGHT: meta -->
+        <aside>
+          <div class="section-marker" style="margin-bottom:var(--s-l);">
+            <span class="num">02</span>
+            <div><span class="label">Hours &amp; address</span></div>
+          </div>
+
+          <h3 style="font-size:var(--step-3);font-weight:400;letter-spacing:-0.02em;">460 Renforth Dr<br>Etobicoke, ON M9C 2N2</h3>
+          <p style="margin-top:var(--s-s);color:var(--ink-soft);">Just off the 427 at the Rathburn Rd exit. Free on-site parking.</p>
+
+          <p style="margin-top:var(--s-m);">
+            <a href="tel:+14166228818" style="font-family:var(--font-display);font-size:var(--step-3);color:var(--ink);letter-spacing:-0.015em;">(416) 622-8818</a>
+          </p>
+          <p style="margin-top:var(--s-2xs);"><a href="mailto:info@rathburnanimalclinic.com" class="link-arrow">info@rathburnanimalclinic.com</a></p>
+
+          <h4 style="margin-top:var(--s-xl);font-family:var(--font-body);font-size:var(--step--1);font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-ghost);">Hours</h4>
+          <div class="hours" style="margin-top:var(--s-s);">
+            <div><span>Monday</span><span>8 am – 6 pm</span></div>
+            <div><span>Tuesday</span><span>8 am – 6 pm</span></div>
+            <div><span>Wednesday</span><span>8 am – 4 pm</span></div>
+            <div><span>Thursday</span><span>8 am – 6 pm</span></div>
+            <div><span>Friday</span><span>8 am – 6 pm</span></div>
+            <div><span>Saturday</span><span>9 am – 3 pm</span></div>
+            <div><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Map -->
+      <div style="margin-top:var(--s-xl);">
+        <div class="section-marker">
+          <span class="num">03</span>
+          <div><span class="label">Map</span></div>
+        </div>
+        <div style="aspect-ratio:21/9;background:var(--paper-deep);border:1px solid var(--line);border-radius:var(--radius-soft);overflow:hidden;">
+          <iframe
+            src="https://www.google.com/maps?q=460+Renforth+Dr,+Etobicoke,+ON&output=embed"
+            width="100%" height="100%" style="border:0;display:block;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Rathburn Animal Clinic — 460 Renforth Dr, Etobicoke"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FIRST VISIT DIALOGUE ===== -->
+<section class="narrative" style="background:var(--paper-deep);border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-marker reveal">
+      <span class="num">04</span>
+      <div>
+        <span class="label">Your first visit</span>
+        <p class="narrative-lede" style="margin-top:var(--s-m);">What to <em>expect</em>.</p>
+      </div>
+    </div>
+    <div class="dialogue reveal">
+      <details open>
+        <summary>Plan for 30–45 minutes.</summary>
+        <p>First visits aren't rushed. We go through history, do a full physical exam, and leave time for your questions.</p>
+      </details>
+      <details>
+        <summary>Bring records if you have them.</summary>
+        <p>Vaccination history and any recent bloodwork helps us pick up where your previous vet left off. Don't have them? Not a problem — we'll start fresh.</p>
+      </details>
+      <details>
+        <summary>We'll tell you what it costs first.</summary>
+        <p>A standard exam is $95. Anything beyond that gets an estimate before it happens, and you decide whether to proceed.</p>
+      </details>
+      <details>
+        <summary>Parking is free and on-site.</summary>
+        <p>No meters. No garage. No timed permits.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Prefer to <em>call?</em></h2>
+    <div class="cta-row">
+      <a href="tel:+14166228818" class="btn btn--rust">Call (416) 622-8818 <span class="arrow">→</span></a>
+      <span style="color:color-mix(in oklch, var(--paper) 70%, transparent);font-size:var(--step--1);">Mon–Fri 8–6 · Sat 9–3</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a href="tel:+14166228818" class="fab-call" aria-label="Call"><span>☎</span><span>Call</span></a>
+
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <div class="footer-brand">
+      <a href="index.html" class="wordmark">Rathburn<em>.</em></a>
+      <p>Independent veterinary care in Etobicoke since 2004.</p>
+    </div>
+    <div><h4>Practice</h4><ul><li><a href="about.html">People</a></li><li><a href="services.html">Services</a></li><li><a href="emergency.html">Urgent care</a></li></ul></div>
+    <div><h4>Visit</h4><ul><li><a href="contact.html#book">Request a visit</a></li><li><a href="contact.html">Contact</a></li><li><a href="tel:+14166228818">(416) 622-8818</a></li></ul></div>
+    <div><h4>Hours</h4><ul style="font-variant-numeric: tabular-nums;"><li>Mon–Tue &nbsp; 8–6</li><li>Wed &nbsp; 8–4</li><li>Thu–Fri &nbsp; 8–6</li><li>Sat &nbsp; 9–3</li><li>Sun &nbsp; Closed</li></ul></div>
+    <div class="footer-legal">
+      <span>© 2026 Rathburn Animal Clinic · 460 Renforth Dr, Etobicoke, ON M9C 2N2</span>
+      <span>Website by <a href="https://hydetech.ca" style="color:var(--ink);border-bottom:1px solid var(--line-strong);">Hyde Tech Solutions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+</body>
+</html>
